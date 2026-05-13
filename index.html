@@ -8,9 +8,25 @@
 <body>
     <h1>Aprender a utilizar a linguagem de programação javascript</h1>
     
+        <p id="parag01">paragrafo escrito dentro da interface do VScode!!</p>
+    
     <script>
         // Abrir umamensagem inicial para o usuário
         alert("bem-vindo a programção em javascript!😊")
+
+        //alterar o coteúdo de um elemneto HTML, neste exemplo selecionar elemnto pleo ID
+        const varParag01 = document.getElementById("parag01")
+        
+        console.log("conteúdo do paragrafo antes de ser alterad :" + varParag01.innerText)
+        
+        varParag01.innerHTML = "texto alterado através do código <strong> javascript </strong>"
+        //propriedade é para obter uma informação
+
+        //utilizar impressão de conteúdo no console log do navegador, uma das formas de debug/analisar código
+        console.log("mostrar este texto dentro da area de log do navegador/browser!")
+        
+
+        
     </script>
 </body>
 </html>
